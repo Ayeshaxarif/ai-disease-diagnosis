@@ -1,0 +1,23 @@
+diseases = {
+    "flu": {"symptoms": ["fever","cough","fatigue","body ache","runny nose"],"treatment": "Rest, fluids, paracetamol"},
+    "malaria": {"symptoms": ["fever","chills","sweating","headache","nausea"],"treatment": "Antimalarial drugs"},
+    "covid": {"symptoms": ["fever","cough","loss of smell","fatigue","breathlessness"],"treatment": "Isolation, rest"},
+    "diabetes": {"symptoms": ["thirst","frequent urination","blurred vision","fatigue","slow healing"],"treatment": "Insulin therapy"},
+    "typhoid": {"symptoms": ["fever","stomach pain","weakness","headache","loss of appetite"],"treatment": "Antibiotics"},
+    "pneumonia": {"symptoms": ["cough","fever","chest pain","shortness of breath","sweating"],"treatment": "Antibiotics"},
+    "dengue": {"symptoms": ["fever","severe headache","joint pain","rash","nausea"],"treatment": "Fluids, rest"},
+    "tuberculosis": {"symptoms": ["cough","weight loss","night sweats","fatigue","chest pain"],"treatment": "6 month antibiotics"},
+    "hepatitis": {"symptoms": ["jaundice","fatigue","nausea","stomach pain","dark urine"],"treatment": "Antiviral drugs"},
+    "asthma": {"symptoms": ["shortness of breath","wheezing","chest tightness","cough"],"treatment": "Inhaler"},
+    "hypertension": {"symptoms": ["headache","dizziness","blurred vision","chest pain","nausea"],"treatment": "BP medication"},
+    "anemia": {"symptoms": ["fatigue","pale skin","weakness","dizziness","shortness of breath"],"treatment": "Iron supplements"},
+    "gastroenteritis": {"symptoms": ["diarrhea","vomiting","stomach pain","nausea","fever"],"treatment": "ORS fluids"},
+    "chickenpox": {"symptoms": ["rash","fever","itching","fatigue","loss of appetite"],"treatment": "Calamine lotion"},
+    "measles": {"symptoms": ["fever","rash","cough","runny nose","red eyes"],"treatment": "Rest, vitamin A"},
+    "migraine": {"symptoms": ["severe headache","nausea","sensitivity to light","vomiting","dizziness"],"treatment": "Pain relievers"},
+    "urinary tract infection": {"symptoms": ["frequent urination","burning urination","lower stomach pain","fever"],"treatment": "Antibiotics"},
+    "food poisoning": {"symptoms": ["vomiting","diarrhea","stomach pain","nausea","fever"],"treatment": "ORS fluids"},
+    "allergy": {"symptoms": ["sneezing","runny nose","itching","rash","watery eyes"],"treatment": "Antihistamines"},
+    "depression": {"symptoms": ["sadness","fatigue","loss of interest","sleep problems","poor concentration"],"treatment": "Therapy"},
+}
+print(f"Knowledge base ready! Total: {len(diseases)} diseases")
