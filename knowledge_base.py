@@ -1,7 +1,7 @@
 diseases = {
     "flu": {
         "symptoms": {
-            "fever": 3,           # weight — kitna common hai is disease mein
+            "fever": 3,
             "cough": 3,
             "fatigue": 2,
             "body ache": 2,
@@ -9,7 +9,10 @@ diseases = {
         },
         "risk_level": "LOW",
         "treatment": "Rest, fluids, paracetamol",
-        "age_risk": {"child": "HIGH", "adult": "LOW", "elderly": "HIGH"}
+        "age_risk": {"child": "HIGH", "adult": "LOW", "elderly": "HIGH"},
+        "medicines": ["paracetamol", "ibuprofen", "antihistamine"],
+        "emergency_symptoms": ["difficulty breathing", "chest pain", "confusion"],
+        "chronic_risk": "LOW"
     },
     "malaria": {
         "symptoms": {
@@ -21,7 +24,10 @@ diseases = {
         },
         "risk_level": "HIGH",
         "treatment": "Antimalarial drugs, consult doctor immediately",
-        "age_risk": {"child": "CRITICAL", "adult": "HIGH", "elderly": "CRITICAL"}
+        "age_risk": {"child": "CRITICAL", "adult": "HIGH", "elderly": "CRITICAL"},
+        "medicines": ["chloroquine", "artemisinin", "paracetamol"],
+        "emergency_symptoms": ["seizures", "unconsciousness", "severe anemia"],
+        "chronic_risk": "MEDIUM"
     },
     "covid": {
         "symptoms": {
@@ -33,7 +39,10 @@ diseases = {
         },
         "risk_level": "HIGH",
         "treatment": "Isolation, rest, consult doctor",
-        "age_risk": {"child": "LOW", "adult": "MEDIUM", "elderly": "CRITICAL"}
+        "age_risk": {"child": "LOW", "adult": "MEDIUM", "elderly": "CRITICAL"},
+        "medicines": ["paracetamol", "vitamin c", "zinc"],
+        "emergency_symptoms": ["breathlessness", "chest pain", "confusion", "blue lips"],
+        "chronic_risk": "HIGH"
     },
     "diabetes": {
         "symptoms": {
@@ -45,7 +54,10 @@ diseases = {
         },
         "risk_level": "HIGH",
         "treatment": "Insulin therapy, controlled diet, regular checkups",
-        "age_risk": {"child": "HIGH", "adult": "HIGH", "elderly": "CRITICAL"}
+        "age_risk": {"child": "HIGH", "adult": "HIGH", "elderly": "CRITICAL"},
+        "medicines": ["insulin", "metformin", "glipizide"],
+        "emergency_symptoms": ["unconsciousness", "extreme thirst", "fruity breath"],
+        "chronic_risk": "CRITICAL"
     },
     "typhoid": {
         "symptoms": {
@@ -57,7 +69,10 @@ diseases = {
         },
         "risk_level": "HIGH",
         "treatment": "Antibiotics, bed rest, clean water",
-        "age_risk": {"child": "CRITICAL", "adult": "HIGH", "elderly": "HIGH"}
+        "age_risk": {"child": "CRITICAL", "adult": "HIGH", "elderly": "HIGH"},
+        "medicines": ["ciprofloxacin", "azithromycin", "paracetamol"],
+        "emergency_symptoms": ["intestinal bleeding", "perforation", "shock"],
+        "chronic_risk": "LOW"
     },
     "pneumonia": {
         "symptoms": {
@@ -69,7 +84,10 @@ diseases = {
         },
         "risk_level": "CRITICAL",
         "treatment": "Antibiotics, hospital if severe",
-        "age_risk": {"child": "CRITICAL", "adult": "HIGH", "elderly": "CRITICAL"}
+        "age_risk": {"child": "CRITICAL", "adult": "HIGH", "elderly": "CRITICAL"},
+        "medicines": ["amoxicillin", "azithromycin", "paracetamol"],
+        "emergency_symptoms": ["blue lips", "rapid breathing", "chest pain"],
+        "chronic_risk": "MEDIUM"
     },
     "dengue": {
         "symptoms": {
@@ -81,7 +99,10 @@ diseases = {
         },
         "risk_level": "HIGH",
         "treatment": "Fluids, rest, avoid aspirin",
-        "age_risk": {"child": "CRITICAL", "adult": "HIGH", "elderly": "CRITICAL"}
+        "age_risk": {"child": "CRITICAL", "adult": "HIGH", "elderly": "CRITICAL"},
+        "medicines": ["paracetamol", "oral rehydration salts"],
+        "emergency_symptoms": ["bleeding gums", "blood in urine", "severe abdominal pain"],
+        "chronic_risk": "LOW"
     },
     "tuberculosis": {
         "symptoms": {
@@ -93,7 +114,10 @@ diseases = {
         },
         "risk_level": "CRITICAL",
         "treatment": "6 month antibiotic course, DOTS therapy",
-        "age_risk": {"child": "CRITICAL", "adult": "HIGH", "elderly": "CRITICAL"}
+        "age_risk": {"child": "CRITICAL", "adult": "HIGH", "elderly": "CRITICAL"},
+        "medicines": ["isoniazid", "rifampicin", "pyrazinamide"],
+        "emergency_symptoms": ["coughing blood", "severe weight loss", "breathing failure"],
+        "chronic_risk": "CRITICAL"
     },
     "hepatitis": {
         "symptoms": {
@@ -105,7 +129,10 @@ diseases = {
         },
         "risk_level": "HIGH",
         "treatment": "Antiviral drugs, avoid alcohol",
-        "age_risk": {"child": "HIGH", "adult": "HIGH", "elderly": "CRITICAL"}
+        "age_risk": {"child": "HIGH", "adult": "HIGH", "elderly": "CRITICAL"},
+        "medicines": ["interferon", "ribavirin", "vitamin b complex"],
+        "emergency_symptoms": ["liver failure", "severe jaundice", "confusion"],
+        "chronic_risk": "CRITICAL"
     },
     "asthma": {
         "symptoms": {
@@ -116,7 +143,10 @@ diseases = {
         },
         "risk_level": "MEDIUM",
         "treatment": "Inhaler, avoid triggers, bronchodilators",
-        "age_risk": {"child": "HIGH", "adult": "MEDIUM", "elderly": "HIGH"}
+        "age_risk": {"child": "HIGH", "adult": "MEDIUM", "elderly": "HIGH"},
+        "medicines": ["salbutamol", "budesonide", "montelukast"],
+        "emergency_symptoms": ["severe breathlessness", "blue lips", "cannot speak"],
+        "chronic_risk": "HIGH"
     },
     "hypertension": {
         "symptoms": {
@@ -128,7 +158,10 @@ diseases = {
         },
         "risk_level": "HIGH",
         "treatment": "Low salt diet, exercise, BP medication",
-        "age_risk": {"child": "LOW", "adult": "HIGH", "elderly": "CRITICAL"}
+        "age_risk": {"child": "LOW", "adult": "HIGH", "elderly": "CRITICAL"},
+        "medicines": ["amlodipine", "lisinopril", "atenolol"],
+        "emergency_symptoms": ["stroke symptoms", "heart attack", "vision loss"],
+        "chronic_risk": "CRITICAL"
     },
     "anemia": {
         "symptoms": {
@@ -140,7 +173,10 @@ diseases = {
         },
         "risk_level": "MEDIUM",
         "treatment": "Iron supplements, iron rich diet",
-        "age_risk": {"child": "HIGH", "adult": "MEDIUM", "elderly": "HIGH"}
+        "age_risk": {"child": "HIGH", "adult": "MEDIUM", "elderly": "HIGH"},
+        "medicines": ["ferrous sulfate", "vitamin b12", "folic acid"],
+        "emergency_symptoms": ["heart palpitations", "fainting", "extreme weakness"],
+        "chronic_risk": "MEDIUM"
     },
     "gastroenteritis": {
         "symptoms": {
@@ -152,7 +188,10 @@ diseases = {
         },
         "risk_level": "MEDIUM",
         "treatment": "ORS fluids, rest, bland diet",
-        "age_risk": {"child": "HIGH", "adult": "LOW", "elderly": "HIGH"}
+        "age_risk": {"child": "HIGH", "adult": "LOW", "elderly": "HIGH"},
+        "medicines": ["oral rehydration salts", "ondansetron", "probiotics"],
+        "emergency_symptoms": ["severe dehydration", "blood in stool", "high fever"],
+        "chronic_risk": "LOW"
     },
     "chickenpox": {
         "symptoms": {
@@ -164,7 +203,10 @@ diseases = {
         },
         "risk_level": "LOW",
         "treatment": "Calamine lotion, antihistamines, rest",
-        "age_risk": {"child": "LOW", "adult": "MEDIUM", "elderly": "HIGH"}
+        "age_risk": {"child": "LOW", "adult": "MEDIUM", "elderly": "HIGH"},
+        "medicines": ["calamine lotion", "antihistamine", "paracetamol"],
+        "emergency_symptoms": ["bacterial infection of rash", "pneumonia", "encephalitis"],
+        "chronic_risk": "LOW"
     },
     "measles": {
         "symptoms": {
@@ -176,7 +218,10 @@ diseases = {
         },
         "risk_level": "HIGH",
         "treatment": "Rest, fluids, vitamin A",
-        "age_risk": {"child": "HIGH", "adult": "MEDIUM", "elderly": "HIGH"}
+        "age_risk": {"child": "HIGH", "adult": "MEDIUM", "elderly": "HIGH"},
+        "medicines": ["vitamin a", "paracetamol", "antibiotics if secondary infection"],
+        "emergency_symptoms": ["encephalitis", "pneumonia", "severe rash spreading"],
+        "chronic_risk": "LOW"
     },
     "migraine": {
         "symptoms": {
@@ -188,7 +233,10 @@ diseases = {
         },
         "risk_level": "LOW",
         "treatment": "Pain relievers, rest in dark room",
-        "age_risk": {"child": "LOW", "adult": "LOW", "elderly": "MEDIUM"}
+        "age_risk": {"child": "LOW", "adult": "LOW", "elderly": "MEDIUM"},
+        "medicines": ["sumatriptan", "ibuprofen", "paracetamol"],
+        "emergency_symptoms": ["worst headache of life", "vision loss", "paralysis"],
+        "chronic_risk": "MEDIUM"
     },
     "urinary tract infection": {
         "symptoms": {
@@ -200,7 +248,10 @@ diseases = {
         },
         "risk_level": "MEDIUM",
         "treatment": "Antibiotics, drink plenty of water",
-        "age_risk": {"child": "MEDIUM", "adult": "LOW", "elderly": "HIGH"}
+        "age_risk": {"child": "MEDIUM", "adult": "LOW", "elderly": "HIGH"},
+        "medicines": ["trimethoprim", "nitrofurantoin", "ciprofloxacin"],
+        "emergency_symptoms": ["kidney pain", "high fever", "blood in urine"],
+        "chronic_risk": "MEDIUM"
     },
     "food poisoning": {
         "symptoms": {
@@ -212,7 +263,10 @@ diseases = {
         },
         "risk_level": "MEDIUM",
         "treatment": "ORS fluids, rest, avoid solid food",
-        "age_risk": {"child": "HIGH", "adult": "LOW", "elderly": "HIGH"}
+        "age_risk": {"child": "HIGH", "adult": "LOW", "elderly": "HIGH"},
+        "medicines": ["oral rehydration salts", "ondansetron", "activated charcoal"],
+        "emergency_symptoms": ["severe dehydration", "bloody diarrhea", "high fever"],
+        "chronic_risk": "LOW"
     },
     "allergy": {
         "symptoms": {
@@ -224,7 +278,10 @@ diseases = {
         },
         "risk_level": "LOW",
         "treatment": "Antihistamines, avoid allergens",
-        "age_risk": {"child": "MEDIUM", "adult": "LOW", "elderly": "LOW"}
+        "age_risk": {"child": "MEDIUM", "adult": "LOW", "elderly": "LOW"},
+        "medicines": ["cetirizine", "loratadine", "fexofenadine"],
+        "emergency_symptoms": ["anaphylaxis", "throat swelling", "difficulty breathing"],
+        "chronic_risk": "MEDIUM"
     },
     "depression": {
         "symptoms": {
@@ -236,10 +293,13 @@ diseases = {
         },
         "risk_level": "HIGH",
         "treatment": "Therapy, antidepressants, social support",
-        "age_risk": {"child": "HIGH", "adult": "HIGH", "elderly": "HIGH"}
+        "age_risk": {"child": "HIGH", "adult": "HIGH", "elderly": "HIGH"},
+        "medicines": ["sertraline", "fluoxetine", "counseling"],
+        "emergency_symptoms": ["suicidal thoughts", "self harm", "complete withdrawal"],
+        "chronic_risk": "HIGH"
     },
 }
 
-print(f"Upgraded Knowledge Base loaded!")
+print(f"Advanced Knowledge Base loaded!")
 print(f"Total diseases: {len(diseases)}")
-print(f"Features: Symptom weights + Risk levels + Age risk!")
+print(f"Features: Weights + Risk + Age Risk + Medicines + Emergency Symptoms + Chronic Risk!")
