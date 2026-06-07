@@ -62,7 +62,7 @@ if st.button("Diagnose Now", type="primary") and selected:
         
         st.success(f"BFS + Minimax Diagnosis: {final}")
         st.info(f"A* Best Match: {ar}")
-        st.info(f"GBFS Confidence: {gs:.0%}")
+        st.info(f"GBFS Confidence: {gs[1]:.0%}")
         st.warning(f"Severity: {sev} (score: {sc})")
         
         st.write("**Top 3 Differential Diagnosis:**")
